@@ -1,0 +1,27 @@
+/*
+* @Author: Administrator
+* @Date:   2017-04-30 17:30:50
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-30 17:52:08
+*/
+.LoginForm
+{
+	position: absolute;
+	margin-left: calc(50% - 300px/2);
+	margin-top: 300px;
+}
+
+.LoginForm .login-form 
+{
+  max-width: 300px;
+}
+
+.LoginForm .login-form-forgot 
+{
+  float: right;
+}
+
+.LoginForm .login-form-button 
+{
+  width: 100%;
+}
