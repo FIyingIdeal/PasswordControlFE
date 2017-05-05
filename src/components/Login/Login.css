@@ -1,0 +1,23 @@
+/*
+* @Author: Administrator
+* @Date:   2017-04-30 17:30:50
+* @Last Modified by:   yanchao
+* @Last Modified time: 2017-05-05 16:55:48
+*/
+.login-form 
+{
+    position: absolute;
+    margin-left: calc(50% - 300px/2);
+    margin-top: 300px;
+    max-width: 300px;
+}
+
+.login-form-forgot 
+{
+    float: right;
+}
+
+.login-form-button 
+{
+    width: 100%;
+}

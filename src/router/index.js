@@ -1,15 +1,15 @@
 /*
 * @Author: Administrator
 * @Date:   2017-04-30 15:36:14
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-04-30 17:28:09
+* @Last Modified by:   yanchao
+* @Last Modified time: 2017-05-05 16:55:56
 */
 
 'use strict';
 
 import React from 'react';
 import { Route } from 'react-router';
-import LoginView from '../views/Login';
+import LoginView from '../components/Login';
 
 const routeConfig = {
 	path: '/',

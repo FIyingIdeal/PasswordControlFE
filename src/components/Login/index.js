@@ -1,25 +1,31 @@
 /*
 * @Author: Administrator
 * @Date:   2017-04-30 15:45:27
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-04-30 17:36:21
+* @Last Modified by:   yanchao
+* @Last Modified time: 2017-05-05 17:42:53
 */
 
 'use strict';
 import React from 'react';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import * as LoginActions from '../../actions/login';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import './Login.css';
 
 const FormItem = Form.Item;
 
 class NormalLoginForm extends React.Component {
+
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        this.props.actions.login(values);
       }
     });
   }
+
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
@@ -58,4 +64,14 @@ class NormalLoginForm extends React.Component {
 
 const WrappedNormalLoginForm = Form.create()(NormalLoginForm);
 
-export default WrappedNormalLoginForm;
+const mapStateToProps = (state) => {
+    return { user: state.user };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        actions: bindActionCreators(LoginActions, dispatch)
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(WrappedNormalLoginForm);

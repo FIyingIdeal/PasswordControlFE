@@ -6,6 +6,11 @@ var webpackConfig = {
 		path: __dirname,
 		filename: 'bundle.js'
 	},
+
+	devServer: {
+        port: 3300
+    },
+    
 	module: {
 		loaders: [
 			{
