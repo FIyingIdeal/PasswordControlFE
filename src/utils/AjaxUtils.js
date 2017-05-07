@@ -43,9 +43,10 @@ export default {
 
             const req = this.createXMLHttpRequest();
             req.open('PUT', url, true);
-            req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            //req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            req.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
             req.onreadystatechange = this.processResponse.bind(req, callback, Object.assign({}, params));
-            req.send(this.getParams(params));
+            req.send(JSON.stringify(params));
 
         } catch (error) {
 

@@ -1,8 +1,8 @@
 /*
 * @Author: yanchao
 * @Date:   2017-05-05 17:09:55
-* @Last Modified by:   yanchao
-* @Last Modified time: 2017-05-05 17:11:04
+* @Last Modified by:   FIyingIdeal
+* @Last Modified time: 2017-05-07 11:30:58
 * @Email: yanchao@hiynn.com
 * @File Path: E:\project\PasswordControlFE\src\utils\ActionTypeUtils.js
 * @File Name: ActionTypeUtils.js
@@ -13,5 +13,6 @@
 
 export default {
 
-	LOGIN: 'LOGIN'
+	LOGIN: 'LOGIN',
+	REGIST: 'REGIST'
 }

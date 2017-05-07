@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2017-04-30 15:45:27
-* @Last Modified by:   yanchao
-* @Last Modified time: 2017-05-05 17:42:53
+* @Last Modified by:   FIyingIdeal
+* @Last Modified time: 2017-05-07 12:14:09
 */
 
 'use strict';
@@ -11,6 +11,7 @@ import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import * as LoginActions from '../../actions/login';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { Link } from 'react-router';
 import './Login.css';
 
 const FormItem = Form.Item;
@@ -31,7 +32,7 @@ class NormalLoginForm extends React.Component {
     return (
       <Form onSubmit={this.handleSubmit} className="login-form">
         <FormItem>
-          {getFieldDecorator('userName', {
+          {getFieldDecorator('username', {
             rules: [{ required: true, message: 'Please input your username!' }],
           })(
             <Input prefix={<Icon type="user" style={{ fontSize: 13 }} />} placeholder="Username" />
@@ -55,7 +56,7 @@ class NormalLoginForm extends React.Component {
           <Button type="primary" htmlType="submit" className="login-form-button">
             Log in
           </Button>
-          Or <a href="">register now!</a>
+          Or <Link to='/regist'>注册</Link>
         </FormItem>
       </Form>
     );
