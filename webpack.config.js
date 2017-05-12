@@ -8,7 +8,7 @@ var webpackConfig = {
 	},
 
 	devServer: {
-        port: 3300
+        port: 3333
     },
     
 	module: {

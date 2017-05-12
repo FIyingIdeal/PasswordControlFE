@@ -9,8 +9,10 @@ export default {
                 req.responseType = 'json';
                 req.open('POST', url, true);
                 req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                //req.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
                 req.onreadystatechange = this.processResponse.bind(req, callback, reqParams);
                 req.send(this.getParams(reqParams));
+                //req.send(JSON.stringify(params));
 
             } catch (error) {
 
