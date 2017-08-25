@@ -1,14 +1,14 @@
 /*
 * @Author: Administrator
 * @Date:   2017-04-30 15:45:27
-* @Last Modified by:   FIyingIdeal
-* @Last Modified time: 2017-05-07 12:14:09
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:36:50
 */
 
 'use strict';
 import React from 'react';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
-import * as LoginActions from '../../actions/login';
+import * as LoginActions from '../../redux/login/loginAction';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router';

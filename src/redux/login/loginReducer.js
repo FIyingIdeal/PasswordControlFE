@@ -1,8 +1,8 @@
 /*
 * @Author: yanchao
 * @Date:   2017-05-05 17:44:17
-* @Last Modified by:   yanchao
-* @Last Modified time: 2017-05-12 19:00:28
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:49:53
 * @Email: yanchao@hiynn.com
 * @File Path: E:\project\PasswordControlFE\src\reducers\login\index.js
 * @File Name: index.js
@@ -10,7 +10,7 @@
 */
 
 'use strict';
-import ActionTypes from '../../utils/ActionTypeUtils';
+import ActionTypes from './loginConstant';
 
 const initialState = {
 	user: {}

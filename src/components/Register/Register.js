@@ -1,8 +1,8 @@
 /*
 * @Author: FIyingIdeal
 * @Date:   2017-05-06 19:06:17
-* @Last Modified by:   FIyingIdeal
-* @Last Modified time: 2017-05-07 12:13:48
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:52:52
 */
 
 'use strict';
@@ -10,7 +10,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Form, Input, Button } from 'antd';
-import * as RegisterActions from '../../actions/register';
+import * as RegisterActions from '../../redux/register/registerAction';
 
 import './Register.css';
 

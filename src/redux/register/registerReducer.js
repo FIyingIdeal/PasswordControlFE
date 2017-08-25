@@ -1,12 +1,11 @@
 /*
-* @Author: FIyingIdeal
-* @Date:   2017-05-07 11:32:45
-* @Last Modified by:   yanchao
-* @Last Modified time: 2017-05-12 19:12:12
+* @Author: Administrator
+* @Date:   2017-08-25 15:42:06
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:50:12
 */
-
 'use strict';
-import ActionTypes from '../../utils/ActionTypeUtils';
+import ActionTypes from './registerConstant';
 
 export default (state = {}, action) => {
 	switch(action.type) {

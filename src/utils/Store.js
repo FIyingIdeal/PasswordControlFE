@@ -1,8 +1,8 @@
 /*
 * @Author: yanchao
 * @Date:   2017-05-05 18:05:49
-* @Last Modified by:   yanchao
-* @Last Modified time: 2017-05-12 19:09:42
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:51:30
 * @Email: yanchao@hiynn.com
 * @File Path: E:\project\PasswordControlFE\src\utils\Store.js
 * @File Name: Store.js
@@ -13,7 +13,7 @@
 import thunk from 'redux-thunk';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
-import * as reducers from '../reducers';
+import * as reducers from '../redux/reducer';
 
 export default {
 	getInstantiate: function(initialState, history) {

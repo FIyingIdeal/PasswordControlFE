@@ -1,8 +1,8 @@
 /*
 * @Author: yanchao
 * @Date:   2017-05-05 16:51:32
-* @Last Modified by:   yanchao
-* @Last Modified time: 2017-05-12 19:31:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:45:43
 * @Email: yanchao@hiynn.com
 * @File Path: E:\project\PasswordControlFE\src\actions\login\index.js
 * @File Name: index.js
@@ -12,7 +12,7 @@
 'use strict';
 import Ajax from '../../utils/AjaxUtils';
 import UrlUtil from '../../utils/RESTfulApiUtils';
-import ActionTypes from '../../utils/ActionTypeUtils';
+import ActionTypes from './loginConstant';
 import { push } from 'react-router-redux';
 
 export const login = (values) => dispatch => {

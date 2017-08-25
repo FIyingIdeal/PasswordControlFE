@@ -1,14 +1,13 @@
 /*
-* @Author: FIyingIdeal
-* @Date:   2017-05-07 11:07:55
-* @Last Modified by:   FIyingIdeal
-* @Last Modified time: 2017-05-07 12:16:03
+* @Author: Administrator
+* @Date:   2017-08-25 15:40:18
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-25 15:46:44
 */
-
 'use strict';
 import Ajax from '../../utils/AjaxUtils';
 import UrlUtil from '../../utils/RESTfulApiUtils';
-import ActionTypes from '../../utils/ActionTypeUtils';
+import ActionTypes from './registerConstant';
 
 export const regist = (user) => (dispatch) => {
 
